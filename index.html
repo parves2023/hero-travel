@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>hero travel</title>
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   </head>
   <body>
     <nav class="dflex container">
@@ -15,6 +16,9 @@
       <div class="nav-links">
         <a href="">Home</a><a href="">Pakejes</a><a href="">Test</a
         ><a href="">Blog</a><a href="">Contact</a>
+      </div>
+      <div class="burger-icon">
+        <i class="fas fa-bars hamburger"></i>
       </div>
     </nav>
 
@@ -121,6 +125,25 @@
     </section>
     
     </main>
+
+    <script>
+document.addEventListener("DOMContentLoaded", function() {
+    let burger = document.querySelector('.burger-icon');
+    let nav = document.querySelector('.nav-links');
+    
+    burger.addEventListener('click', function() {
+        if (nav.classList.contains('nav-style')) {
+            nav.classList.remove('nav-style');
+        } else {
+            nav.classList.add('nav-style');
+        }
+    });
+});
+
+
+
+
+    </script>
   </body>
 </html>
 <!-- <h2>Choose Your Destination</h2>

@@ -10,6 +10,9 @@ body {
 }
 
 /* shared styles */
+.burger-icon{
+  display: none;
+}
 .dflex {
   display: flex;
 }
@@ -159,4 +162,44 @@ nav {
   transform: translate(-50%, -50%);
   color: white;
   font-size: 1.5em; /* Adjust as needed */
+}
+
+@media screen and (max-width: 570px) {
+  .burger-icon{
+    display: block;
+  }
+  .nav-links{
+    display: none;
+  }
+  .nav-style{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffffd8;
+    width: 90%;
+    height: 50%;
+    top: 6rem;
+    right: 1rem;
+    left: 1rem;
+    border-radius: 8px;
+  }
+  h1{
+    font-size: 3rem;
+  }
+  .inputs{
+    display: flex;
+    flex-direction: column;
+  }
+  .container{
+    text-align: center;
+  }
+  h2{
+    font-size: 2rem;
+  }
+  .populer-tours{
+    grid-template-columns: 1fr;
+  }
+  .row1,.row2,.row3{
+    grid-template-columns: 1fr;
+  }
 }
