@@ -1,42 +1,90 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
 
-*{
-    margin: 0;
-    border: 0;
-    outline: 0;
+* {
+  margin: 0;
+  border: 0;
+  outline: 0;
 }
-body{
-    font-family: "Mulish", sans-serif;
+body {
+  font-family: "Mulish", sans-serif;
 }
-
 
 /* shared styles */
-.dflex{
-    display: flex;
+.dflex {
+  display: flex;
 }
-.container{
-    width: 95%;
-    margin: 5rem auto;
+.container {
+  width: 95%;
+  margin: 5rem auto;
+  border: 2px solid red;
+  border-radius: 8px;
+}
+h1{
+    font-size: 4rem;
+    color: white;
+}
+h2{
+    font-size: 3rem;
+}
+p{
+    color: rgba(255, 255, 255, 0.83);
+    font-size: 1rem;
+}
+
+input,select{
+    padding: 1rem .5rem;
+    border-radius: 4px;
+    margin: 10px;
+    font-weight: 700;
+    backdrop-filter: blur(4px);
+    background-color: rgba(255, 255, 255, 0.278);
+    color: white;
+    width: 7rem;
+}
+input::placeholder {
+    color: #ffffff; /* Change this to the desired color */
+    opacity: 1; /* Optional: Ensure the color opacity is 100% */
 }
 
 /* navbar styles */
-nav{
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 20px !important;
+nav {
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px !important;
 }
-.logo{
-    align-items: center;
-    gap: 10px;
+.logo {
+  align-items: center;
+  gap: 10px;
 }
-.nav-links{
-    display: flex;
-    gap: 20px;
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
 
+/* hero section starts */
+.hero-section {
+  align-items: center;
+  justify-content: center;
+  padding: 7rem 0;
+  
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)),
+    url(../Images/Group\ 13\ \(1\)\ \(1\).png);
+  background-size: cover; /* Adjust as necessary */
+  background-repeat: no-repeat; /* Adjust as necessary */
 }
-.nav-links a{
-    text-decoration: none;
-    color: black;
-    cursor: pointer;
+.textandselect {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  border: 2px solid red;
 }
+
+
 
